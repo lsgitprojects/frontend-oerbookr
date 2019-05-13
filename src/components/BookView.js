@@ -88,9 +88,9 @@ class BookView extends React.Component {
                 {this.props.books.forEach(book => {
                     if (this.props.match.params.name === book.id) {
                         return (
-                            <BookViewContainer key={book.id}>
+                            <BookViewContainer key={book._id}>
                                 <BookViewButtons>
-                                    <Link to={`/books/${book.id}`}>
+                                    <Link to={`/books/${book._id}`}>
                                         <p>edit</p>
                                     </Link>
                                     <p onClick={this.toggleModal}>delete</p>

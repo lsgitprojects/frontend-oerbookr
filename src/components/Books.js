@@ -34,7 +34,7 @@ class Books extends Component {
 
                 {this.props.books.map(book => {
                     return (
-                        <NavLink to={`/books/${book.id}`} key={book.id}>
+                        <NavLink to={`/books/${book.id}`} key={book._id}>
                             <StyledBook>
                                 <Book
                                     title={book.title}
@@ -44,7 +44,7 @@ class Books extends Component {
                                     subject={book.subject}
                                     image={book.image}
                                     link={book.link}
-                                    key={book.id}
+                                    key={book._id}
                                 />
                             </StyledBook>
                         </NavLink>

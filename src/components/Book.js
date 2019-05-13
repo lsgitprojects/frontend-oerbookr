@@ -8,7 +8,7 @@ text-align: left;
 padding-left: 10px;
 h3 {
     border-bottom: 2px solid #D5D5D5;
-    width: 200px;
+    // width: 200px;
     padding-bottom: 5px;
 }
 p {
