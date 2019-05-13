@@ -83,38 +83,38 @@ class BookForm extends Component {
                     <input
                         onChange={this.handleInputChange}
                         placeholder="Author"
-                        value={this.state.textBody}
-                        name="textBody"
+                        value={this.state.author}
+                        name="author"
                     />
                     <input
                         onChange={this.handleInputChange}
                         placeholder="Publisher"
-                        value={this.state.textBody}
-                        name="textBody"
+                        value={this.state.publisher}
+                        name="publisher"
                     />
                     <input
                         onChange={this.handleInputChange}
                         placeholder="License"
-                        value={this.state.textBody}
-                        name="textBody"
+                        value={this.state.license}
+                        name="license"
                     />
                     <input
                         onChange={this.handleInputChange}
                         placeholder="Subject"
-                        value={this.state.textBody}
-                        name="textBody"
+                        value={this.state.subject}
+                        name="subject"
                     />
                     <input
                         onChange={this.handleInputChange}
                         placeholder="Image"
-                        value={this.state.textBody}
-                        name="textBody"
+                        value={this.state.image}
+                        name="image"
                     />
                     <input
                         onChange={this.handleInputChange}
                         placeholder="Link"
-                        value={this.state.textBody}
-                        name="textBody"
+                        value={this.state.link}
+                        name="link"
                     />
                     <button type="submit">Save</button>
                 </form>
