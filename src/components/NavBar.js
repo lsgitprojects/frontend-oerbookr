@@ -43,7 +43,7 @@ const NavBar = () => {
                     <NavButton>View Books</NavButton>
                 </NavLink>
                 <NavLink to="/create">
-                    {/* <NavButton>Add Book</NavButton> */}
+                    <NavButton>Add Book</NavButton>
                 </NavLink>
             </NavContainer>
         </StyledNavBar>
