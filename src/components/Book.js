@@ -16,7 +16,7 @@ p:nth-child(1) {
     overflow: hidden;
 }
 img {
-    height: 130px;
+    height: 150px;
     width: 150px;
 }
 `
@@ -28,7 +28,7 @@ const Book = props => {
             <p>{props.author}</p>
             <p>{props.publisher}</p>
             <p>{props.license}</p>
-            <p>{props.subject}</p>
+            {/* <p>{props.subject}</p> */}
             {/* <p>{props.image}</p> */}
             {/* <p>{props.link}</p> */}
             <img src={props.image} alt={'book image'} />
