@@ -58,7 +58,6 @@ button:nth-child(3) {
     background-color: #24B8BD;
 }
 `
-
 class BookView extends React.Component {
     constructor(props) {
         super(props);
@@ -88,9 +87,9 @@ class BookView extends React.Component {
                 {this.props.books.forEach(book => {
                     if (this.props.match.params.name === book.id) {
                         return (
-                            <BookViewContainer key={book._id}>
+                            <BookViewContainer key={book.id}>
                                 <BookViewButtons>
-                                    <Link to={`/books/${book._id}`}>
+                                    <Link to={`/books/${book.id}`}>
                                         <p>edit</p>
                                     </Link>
                                     <p onClick={this.toggleModal}>delete</p>

@@ -11,9 +11,13 @@ h3 {
     // width: 200px;
     padding-bottom: 5px;
 }
-p {
+p:nth-child(1) {
     height: 131px;
     overflow: hidden;
+}
+img {
+    height: 130px;
+    width: 150px;
 }
 `
 
@@ -22,11 +26,12 @@ const Book = props => {
         <BookContainer>
             <h3>{props.title}</h3>
             <p>{props.author}</p>
-            {/* <p>{props.publisher}</p>
+            <p>{props.publisher}</p>
             <p>{props.license}</p>
             <p>{props.subject}</p>
-            <p>{props.image}</p>
-            <p>{props.link}</p> */}
+            {/* <p>{props.image}</p> */}
+            {/* <p>{props.link}</p> */}
+            <img src={props.image} alt={'book image'} />
         </BookContainer>
     );
 };

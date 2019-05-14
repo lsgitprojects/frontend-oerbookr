@@ -19,8 +19,8 @@ h2 {
 
 const StyledBook = styled.div`
 border: 2px solid #D9D9D9;
-width: 250px;
-height: 260px;
+width: 300px;
+height: 400px;
 background-color: #FFFFFF;
 margin: 10px;
 `
@@ -34,7 +34,7 @@ class Books extends Component {
 
                 {this.props.books.map(book => {
                     return (
-                        <NavLink to={`/books/${book.id}`} key={book._id}>
+                        <NavLink to={`/books/${book.id}`} key={book.id}>
                             <StyledBook>
                                 <Book
                                     title={book.title}
@@ -44,7 +44,7 @@ class Books extends Component {
                                     subject={book.subject}
                                     image={book.image}
                                     link={book.link}
-                                    key={book._id}
+                                    key={book.id}
                                 />
                             </StyledBook>
                         </NavLink>

@@ -61,7 +61,7 @@
 //     componentDidMount() {
 //         this.props.books.filter(book => {
 //             console.log('test1')
-//             if (this.props.match.params.id === book._id) {
+//             if (this.props.match.params.id === book.id) {
 //                 console.log('test2')
 //                 return this.setState({
 //                     title: book.title,
